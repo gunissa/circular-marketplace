@@ -55,7 +55,7 @@ API Endpoints
 Method	           Endpoint	                         Description
 GET	                  /	                        Test route to verify the API
 GET	                  /items	                Fetch all shared items
-POST	              /items	                Add a new shared item
+POST	                /items	                Add a new shared item
 DELETE	              /items/:id	            Delete a shared item by ID
 
 
