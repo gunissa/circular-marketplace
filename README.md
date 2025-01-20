@@ -52,11 +52,11 @@ npm run dev
 The backend will run on http://localhost:4000.
 
 API Endpoints
-Method	           Endpoint	                         Description
+Method	           Endpoint	                    Description
 GET	                  /	                        Test route to verify the API
-GET	                  /items	                Fetch all shared items
-POST	                /items	                Add a new shared item
-DELETE	              /items/:id	            Delete a shared item by ID
+GET	                  /items	                  Fetch all shared items
+POST	                /items	                  Add a new shared item
+DELETE	              /items/:id	              Delete a shared item by ID
 
 
 
