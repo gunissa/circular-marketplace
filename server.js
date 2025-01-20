@@ -2,6 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const itemsRouter = require("./routes/items");
+
+
 
 dotenv.config(); // Load environment variables from .env
 const app = express();
@@ -13,7 +16,10 @@ app.use(express.json());
 // Test Route
 app.get('/', (req, res) => {
     res.send('Circular Marketplace API is running');
+
 });
+
+app.use("/items", itemsRouter);
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGO_URI)
