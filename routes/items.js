@@ -1,15 +1,15 @@
 const express = require("express");
-const router = express.Router(); // used express.Router() to create a route handler.
+const router = express.Router(); 
 const Item = require("../models/item"); // Import the Item schema
 
-// Get all items                 //Fetches all items from the database
+// Get all items                 
 router.get("/", async (req, res) => {
   try {
-    const items = await Item.find();
-    res.json(items);
+    const items = await Item.find();                       // Fetch all items from the database
+    res.json(items);                                        // Send the items to the frontend
   } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
+    res.status(500).json({ message: err.message });              // Handle errors
+  } 
 });
 
 // Add a new item
